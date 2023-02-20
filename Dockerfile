@@ -8,6 +8,6 @@ WORKDIR /var/www/html/
 RUN unzip photogenic.zip
 RUN cp -rvf photogenic/* .
 RUN rm -rf photogenic photogenic.zip
-CMD ["/usr/sbin/httpd", "D", "FOREGROUND"]
-EXPOSE 80 22 81
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+EXPOSE 80 22 
 #comment is added to the code 

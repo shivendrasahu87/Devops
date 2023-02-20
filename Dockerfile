@@ -1,6 +1,6 @@
 FROM centos:latest
 MAINTAINER shivendrasahu87@gmail.com
-Run sudo apt update\
+RUN sudo apt update\
     sudo apt install apache2\
     zip\
     unzip
